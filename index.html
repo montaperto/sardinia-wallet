@@ -161,7 +161,7 @@
   </div>
 
   <div class="footer navbar-fixed-bottom text-center" onclick="openMap();">
-      <div class="alert alert-wallet fixed-bottom text-center" style="margin-bottom: 0px; color-background: black;" role="alert">Show Map <span class="glyphicon glyphicon-map-marker"></span></div>
+      <div class="alert alert-wallet fixed-bottom text-center" style="margin-bottom: 0px; color-background: black;" id="button-map" role="alert">Show Map <span class="glyphicon glyphicon-map-marker"></span></div>
   </div>
 <!--
   <div class="footer navbar-bottom">
@@ -174,8 +174,10 @@
   function openMap(){
     if(document.getElementById('div-map').style.display == "block"){
       document.getElementById('div-map').style.display = "none";
+      document.getElementById('button-map').innerHTML = "Show map <span class='glyphicon glyphicon-map-marker'></span>";
     } else {
       document.getElementById('div-map').style.display = "block";
+      document.getElementById('button-map').innerHTML = "Show results <span class='glyphicon glyphicon-th-list'></span>";
     }
   }
 </script>
