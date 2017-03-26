@@ -26,6 +26,20 @@
       </ul>
       </nav>
     </div>
+
+
+    <style>
+      #div-map {
+          min-height: 100%; 
+          z-index: 1000;
+          position:absolute; 
+          top:0; 
+          left:0; 
+          width:100%; 
+          height:100%;
+      }
+    </style>
+
 </header>
 
 <body>
@@ -132,9 +146,18 @@
 
   </div>
 
+<div id="div-map" class="div-map" style="display:none;">
+  <iframe
+  width="100%"
+  height="100%"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBKdlgHP0S40CDTGqUFAPCEogL7MPpYf_E
+    &q=Sardinia" allowfullscreen>
+</iframe>
+</div>
 
 
-  <div class="footer navbar-fixed-bottom text-center">
+  <div class="footer navbar-fixed-bottom text-center" onclick="openMap();">
       <div class="alert alert-wallet fixed-bottom text-center" style="margin-bottom: 0px; color-background: black;" role="alert">Show Map <span class="glyphicon glyphicon-map-marker"></span></div>
   </div>
 <!--
@@ -143,6 +166,18 @@
   </div>
 -->
 </body>
+
+<script>
+  function openMap(){
+    if(document.getElementById('div-map').style.display == "block"){
+      document.getElementById('div-map').style.display = "none";
+    } else {
+      document.getElementById('div-map').style.display = "block";
+    }
+  }
+</script>
+
+
 </html>
 
 
