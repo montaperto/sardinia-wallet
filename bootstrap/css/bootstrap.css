@@ -5118,6 +5118,12 @@ a.thumbnail.active {
   background-color: #f2dede;
   border-color: #ebccd1;
 }
+.alert-wallet {
+  color: white;
+  background-color: #184584;
+  border-color: white;
+}
+
 .alert-danger hr {
   border-top-color: #e4b9c0;
 }
