@@ -12,6 +12,10 @@ html {
 body {
   margin: 0;
 }
+.container {
+  padding-top: 60px;
+  height: 100%;
+}
 article,
 aside,
 details,
